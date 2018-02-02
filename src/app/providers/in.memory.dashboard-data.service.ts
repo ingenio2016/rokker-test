@@ -32,7 +32,6 @@ export class InMemoryDasboardDataService implements InMemoryDbService {
         activity.data.speed = Math.floor(Math.random() * 30);
         activity.data.time = Date.now();
       });
-      console.log(activities)
     }, 500);
 
 

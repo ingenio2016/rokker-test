@@ -1,0 +1,455 @@
+#navigation{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  #header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 68px;
+    background-color: #1E2025;
+    .left-info{
+      margin:0;
+      width: 100%;
+      padding: 20px 20px;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      .logo{
+        margin:0;
+        padding: 0;
+        float:left;
+      };
+      .icon-menu{
+        margin:0;
+        padding: 0 0 25px 0;
+        float:right;
+        span{
+          display: block;
+          width: 30px;
+          height: 4px;
+          background: #FFF;
+          margin: 5px 0;
+        }
+      }
+    };
+    .right-info{
+      margin:0;
+      width: 100%;
+      height: 68px;
+      padding: 20px 48px 20px 48px;
+      background-color: #2F323A;
+      position: absolute;
+      top: 67px;
+      left: 0;
+      .user{
+        padding: 0;
+        margin: 0;
+        p{
+          margin: 0;
+          padding: 5px 0 0 0;
+          top: 40px;
+          font-size: 19px;
+          float: right;
+          a{
+            text-decoration: none;
+            color: #FFF;
+          }
+        };
+      };
+      transition: all 500ms linear;
+      &.sidebar{
+        position: absolute;
+        left: -100%
+      }
+    };
+
+    .clear{
+      clear: both;
+    }
+  };
+  #menu{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    top: 66px;
+    .menu-items{
+      width: 100%;
+      background-color: #2F323A;
+      position: relative;
+      left: 0;
+      transition: all 500ms linear;
+      &.sidebar{
+        position: relative;
+        left: -100%;
+      }
+      .navigate{
+        padding: 25px 20px 5px 20px;
+        p{
+          margin: 0;
+          padding-bottom: 6px;
+          color: #545454;
+          border-bottom: 1px solid #545454;
+        }
+      }
+      ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+          padding: 15px 55px;
+          margin: 0;
+          a{
+            color: #FFF;
+            text-decoration: none;
+          };
+          &.analytics{
+            background: url("../../../../assets/img/analitycs.png") 5% 50% no-repeat;
+          }
+          &.analytics:hover{
+            background-color: #1E2025;
+          }
+          &.news{
+            background: url("../../../../assets/img/newspaper-o.png") 5% 50% no-repeat;
+          }
+          &.news:hover{
+            background-color: #1E2025;
+          }
+          &.board{
+            background: url("../../../../assets/img/board-brief.png") 5% 50% no-repeat;
+          }
+          &.board:hover{
+            background-color: #1E2025;
+          }
+          &.brief{
+            background: url("../../../../assets/img/briefcase.png") 5% 50% no-repeat;
+          }
+          &.brief:hover{
+            background-color: #1E2025;
+          }
+          &.active{
+            background-color: #1E2025;
+          }
+        };
+      }
+    };
+    .content{
+      position: relative;
+      top: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      padding: 40px 10px 40px 10px;
+      transition: all 500ms linear;
+
+      &.sidebar{
+        position: absolute;
+        top: -67px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #navigation{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    #header {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      height: 68px;
+      background-color: #1E2025;
+      .left-info{
+        margin:0;
+        width: 100%;
+        padding: 20px 20px;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        .logo{
+          margin:0;
+          padding: 0;
+          float:left;
+        };
+        .icon-menu{
+          margin:0;
+          padding: 0 0 25px 0;
+          float:right;
+          span{
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #FFF;
+            margin: 5px 0;
+          }
+        }
+      };
+      .right-info{
+        margin:0;
+        width: 100%;
+        height: 68px;
+        padding: 20px 48px 20px 48px;
+        background-color: #2F323A;
+        position: absolute;
+        top: 67px;
+        left: 0;
+        .user{
+          padding: 0;
+          margin: 0;
+          p{
+            margin: 0;
+            padding: 5px 0 0 0;
+            top: 40px;
+            font-size: 19px;
+            float: right;
+            a{
+              text-decoration: none;
+              color: #FFF;
+            }
+          };
+        };
+        transition: all 500ms linear;
+        &.sidebar{
+          position: absolute;
+          left: -100%
+        }
+      };
+
+      .clear{
+        clear: both;
+      }
+    };
+    #menu{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: relative;
+      top: 66px;
+      .menu-items{
+        width: 100%;
+        background-color: #2F323A;
+        position: relative;
+        left: 0;
+        transition: all 500ms linear;
+        &.sidebar{
+          position: relative;
+          left: -100%;
+        }
+        .navigate{
+          padding: 25px 20px 5px 20px;
+          p{
+            margin: 0;
+            padding-bottom: 6px;
+            color: #545454;
+            border-bottom: 1px solid #545454;
+          }
+        }
+        ul{
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          li{
+            padding: 15px 55px;
+            margin: 0;
+            a{
+              color: #FFF;
+              text-decoration: none;
+            };
+            &.analytics{
+              background: url("../../../../assets/img/analitycs.png") 3% 50% no-repeat;
+            }
+            &.analytics:hover{
+              background-color: #1E2025;
+            }
+            &.news{
+              background: url("../../../../assets/img/newspaper-o.png") 3% 50% no-repeat;
+            }
+            &.news:hover{
+              background-color: #1E2025;
+            }
+            &.board{
+              background: url("../../../../assets/img/board-brief.png") 3% 50% no-repeat;
+            }
+            &.board:hover{
+              background-color: #1E2025;
+            }
+            &.brief{
+              background: url("../../../../assets/img/briefcase.png") 3% 50% no-repeat;
+            }
+            &.brief:hover{
+              background-color: #1E2025;
+            }
+            &.active{
+              background-color: #1E2025;
+            }
+          };
+        }
+      };
+      .content{
+        position: relative;
+        top: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        padding: 40px 10px 40px 10px;
+        transition: all 500ms linear;
+        &.sidebar{
+          position: absolute;
+          top: -67px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+  #navigation {
+    margin: 0;
+    padding: 0;
+    position: static;
+    width: 100%;
+    top: 0;
+    left: 0;
+    #header {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 68px;
+      background-color: #2F323A;
+      overflow: hidden;
+      .left-info{
+        margin:0;
+        width: 20%;
+        height: 68px;
+        padding: 20px 20px;
+        float: left;
+        background-color: #1E2025;
+        position: relative;
+        .logo{
+          margin:0;
+          padding: 0;
+          position: static;
+          left: 0;
+        };
+        .icon-menu{
+          display: none;
+        }
+      };
+      .right-info{
+        margin:0;
+        width: 80%;
+        padding: 20px;
+        position: static;
+        left: 0;
+        float: left;
+        background-color: #2F323A;
+        .user{
+          padding: 0;
+          margin: 0;
+          p{
+            margin: 0;
+            padding: 5px 0 0 0;
+            top: 40px;
+            font-size: 19px;
+            float: right;
+            a{
+              text-decoration: none;
+              color: #FFF;
+            }
+          };
+        };
+        transition: all 0ms linear;
+        &.sidebar{
+          position: static;
+          left: 0;
+        }
+      };
+      .clear{
+        clear: both;
+      }
+    }
+    #menu{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: static;
+      overflow: hidden;
+      background-color: #2F323A;
+      .menu-items{
+        width: 20%;
+        float: left;
+        .navigate{
+          padding: 25px 20px 5px 20px;
+          p{
+            margin: 0;
+            padding-bottom: 6px;
+            color: #545454;
+            border-bottom: 1px solid #545454;
+          }
+        }
+        ul{
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          li{
+            padding: 15px 55px;
+            margin: 0;
+            a{
+              color: #FFF;
+              text-decoration: none;
+            };
+            &.analytics{
+              background: url("../../../../assets/img/analitycs.png") 7% 50% no-repeat;
+            }
+            &.analytics:hover{
+              background-color: #1E2025;
+            }
+            &.news{
+              background: url("../../../../assets/img/newspaper-o.png") 7% 50% no-repeat;
+            }
+            &.news:hover{
+              background-color: #1E2025;
+            }
+            &.board{
+              background: url("../../../../assets/img/board-brief.png") 7% 50% no-repeat;
+            }
+            &.board:hover{
+              background-color: #1E2025;
+            }
+            &.brief{
+              background: url("../../../../assets/img/briefcase.png") 7% 50% no-repeat;
+            }
+            &.brief:hover{
+              background-color: #1E2025;
+            }
+          };
+        };
+        &.sidebar{
+          position: static;
+          left: 0;
+        }
+      };
+      .content{
+        position: static;
+        width: 80%;
+        float: left;
+        padding: 40px 10px 40px 10px;
+        padding: 40px;
+        &.sidebar{
+          position: static
+        }
+      }
+    }
+  }
+
+}
+
+
+
+

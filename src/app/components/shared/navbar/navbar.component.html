@@ -1,16 +1,38 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" [routerLink] = "['dashboard']">
-    Test
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink] = "['news']">News</a>
-      </li>
-    </ul>
+<div id="navigation">
+  <div id="header">
+    <div class="left-info">
+      <div class="logo">
+        <img src="../../../../assets/img/logo.png" alt="">
+      </div>
+      <div class="icon-menu" (click)="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="right-info" [ngClass]="[sidebar]">
+      <div class="user">
+        <p><a href="#">Admin Name <span class="img"><img src="../../../../assets/img/shape.png" alt=""></span></a></p>
+      </div>
+    </div>
+    <div class="clear"></div>
   </div>
-</nav>
+  <div id="menu">
+    <div class="menu-items" [ngClass]="[sidebar]">
+      <div class="navigate">
+        <p>NAVIGATE</p>
+      </div>
+      <ul>
+        <li class="analytics" routerLinkActive="active"><a [routerLink] = "['dashboard']">Analytics</a></li>
+        <li class="news" routerLinkActive="active"><a [routerLink] = "['news']">News</a></li>
+        <li class="board" routerLinkActive="active"><a href="#">Board Brief</a></li>
+        <li class="brief" routerLinkActive="active"><a href="#">Briefcase</a></li>
+      </ul>
+    </div>
+    <div class="content" [ngClass]="[sidebar]">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
