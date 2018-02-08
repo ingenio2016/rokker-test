@@ -1,6 +1,6 @@
-<div id="navigation">
-  <div id="header">
-    <div class="left-info">
+<div class="page">
+  <div class="header">
+    <div class="logo-menu">
       <div class="logo">
         <img src="../../../../assets/img/logo.png" alt="">
       </div>
@@ -10,29 +10,27 @@
         <span></span>
       </div>
     </div>
-    <div class="right-info" [ngClass]="[sidebar]">
-      <div class="user">
-        <p><a href="#">Admin Name <span class="img"><img src="../../../../assets/img/shape.png" alt=""></span></a></p>
-      </div>
+    <div class="user bounceInDown">
+      <p><a href="#">Admin Name <span class="img"><img src="../../../../assets/img/shape.png" alt=""></span></a></p>
     </div>
-    <div class="clear"></div>
   </div>
-  <div id="menu">
-    <div class="menu-items" [ngClass]="[sidebar]">
+  <div class="menu">
+    <div class="menu-items bounceInDown">
       <div class="navigate">
         <p>NAVIGATE</p>
       </div>
-      <ul>
-        <li class="analytics" routerLinkActive="active"><a [routerLink] = "['dashboard']">Analytics</a></li>
-        <li class="news" routerLinkActive="active"><a [routerLink] = "['news']">News</a></li>
-        <li class="board" routerLinkActive="active"><a href="#">Board Brief</a></li>
-        <li class="brief" routerLinkActive="active"><a href="#">Briefcase</a></li>
-      </ul>
+      <div>
+        <ul>
+          <li class="analytics" routerLinkActive="active"><a [routerLink] = "['dashboard']">Analytics</a></li>
+          <li class="news" routerLinkActive="active"><a [routerLink] = "['news']">News</a></li>
+          <li class="board" routerLinkActive="active"><a href="#">Board Brief</a></li>
+          <li class="brief" routerLinkActive="active"><a href="#">Briefcase</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="content" [ngClass]="[sidebar]">
+    <div class="content bounceInDown">
       <router-outlet></router-outlet>
     </div>
-    <div class="clear"></div>
   </div>
 </div>
 

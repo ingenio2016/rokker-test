@@ -6,18 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  sidebar = 'sidebar';
+  slideMenu = false;
   constructor() { }
 
   ngOnInit() {
   }
 
   toggleNav() {
-    if (this.sidebar === '') {
-      this.sidebar = 'sidebar';
+    if (this.slideMenu === false) {
+      this.slideMenu = true;
     } else {
-      this.sidebar = '';
+      this.slideMenu = false;
     }
-    return this.sidebar;
   }
 }

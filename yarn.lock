@@ -337,6 +337,10 @@ angular-in-memory-web-api@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/angular-in-memory-web-api/-/angular-in-memory-web-api-0.5.3.tgz#49ba7b7d19210e14b0dbe62d2e3b63d4b4a29c4a"
 
+animate.css@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-3.6.1.tgz#4ea8a48556378bc8d7535224296c4c0dac9229de"
+
 ansi-html@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/ansi-html/-/ansi-html-0.0.7.tgz#813584021962a9e9e6fd039f940d12f56ca7859e"
